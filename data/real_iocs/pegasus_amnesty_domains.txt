@@ -1,0 +1,47 @@
+# Subset of domains historically documented as Pegasus (NSO Group)
+# infrastructure, published by Amnesty International Security Lab.
+#
+# Source:    https://github.com/AmnestyTech/investigations/blob/master/2021-07-18_nso/domains.txt
+# Fetched:   2026-08-31
+# License:   indicators published by Amnesty International as part of the
+#            "Pegasus Project" (2021) for defensive detection purposes.
+#
+# Use in this project: these domains are used ONLY as reference strings in
+# the synthetic traffic generator (src/simulate), to give the "root"
+# domains of pegasus_like sessions realistic lexical characteristics
+# (generic/decoy-style names) — not to generate real network traffic
+# toward them. They are not included in the known-IoC baseline
+# (src/baseline/ioc_engine.py): Pegasus's C2 infrastructure rotates
+# constantly, so a static list of historical indicators isn't
+# representative of an infection with new, not-yet-catalogued
+# infrastructure — exactly the limitation that behavioral analysis (as
+# opposed to static IoC matching) is meant to address.
+123tramites.com
+14-tracking.com
+1minto-start.com
+24-7clinic.com
+301-redirecting.com
+365redirect.co
+3driving.com
+7style.org
+800health.net
+aalaan.tv
+accomodation-tastes.net
+accountant-audio.com
+accountcanceled.com
+accountnotify.com
+accountsections.com
+accountsecurities.org
+activate-discount.com
+active-folders.com
+actorsshop.net
+actu24.online
+add-client.com
+additional-costs.com
+addmyid.net
+addresstimeframe.com
+adeal4u.co
+ad-generator.net
+adjust-local-settings.com
+adjustlocalsettings.net
+adscreator.net

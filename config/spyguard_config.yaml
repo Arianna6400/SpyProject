@@ -1,0 +1,21 @@
+# SpyGuard configuration for the capture node (Raspberry Pi 4)
+
+capture:
+  iface_in: eth0          # uplink to the Internet (NAT masquerading)
+  iface_out: wlan0        # access point dedicated to the device under analysis
+  duration: 1800           # capture session duration, in seconds (30 minutes)
+  pcap_output_dir: /var/lib/spyguard/captures
+
+dns:
+  resolver: unbound
+  resolver_port: 5353
+  log_path: /var/log/unbound/unbound_query.log
+
+analysis:
+  suricata_enabled: true
+  ioc_source: coalition-against-stalkerware   # CC BY-NC-SA license
+  ioc_update_interval_hours: 24
+
+reporting:
+  output_format: json
+  output_dir: /var/lib/spyguard/reports

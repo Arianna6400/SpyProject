@@ -1,0 +1,43 @@
+# Network indicators (domains/IPs) for commercial stalkerware (mSpy,
+# FlexiSpy, Hoverwatch), published and maintained by ECHAP as part of the
+# Coalition Against Stalkerware.
+#
+# Source:  https://github.com/AssoEchap/stalkerware-indicators
+#          (generated/network.csv)
+# Fetched: 2026-08-31
+# License: CC-BY 4.0 (attribution: ECHAP / AssoEchap/stalkerware-indicators)
+#
+# Use in this project: these indicators are used both as C2 "root" domains
+# in the synthetic traffic generator for stalkerware_like sessions
+# (src/simulate), and as the known-indicator knowledge base for the
+# IoC-based baseline (src/baseline/ioc_engine.py) — commercial stalkerware
+# is a threat with relatively stable, cataloguable infrastructure (unlike
+# Pegasus, see the note in pegasus_amnesty_domains.txt).
+type,indicator,app
+domain,cp.mspyonline.com,mSpy
+domain,mspyonline.com,mSpy
+domain,my.mspyonline.com,mSpy
+domain,repo.mspyonline.com,mSpy
+domain,tracking.mspyonline.com,mSpy
+domain,www.mspy.com,mSpy
+domain,www.mspyonline.com,mSpy
+domain,getmspy.net,mSpy
+domain,kypler.com,mSpy
+domain,admin.flexispy.com,FlexiSpy
+domain,api.flexispy.com,FlexiSpy
+domain,ecom.flexispy.com,FlexiSpy
+domain,portal.flexispy.com,FlexiSpy
+domain,client.mobilefonex.com,FlexiSpy
+domain,push.mobilefonex.com,FlexiSpy
+ipv4,119.8.35.235,FlexiSpy
+domain,hoverwatch.com,Hoverwatch
+domain,i.hoverwatch.com,Hoverwatch
+domain,i1.hoverwatch.com,Hoverwatch
+domain,dev.hoverwatch.com,Hoverwatch
+domain,account.refog.com,Hoverwatch
+domain,downloads.refog.com,Hoverwatch
+ipv4,104.236.73.120,Hoverwatch
+ipv4,149.56.26.44,Hoverwatch
+ipv4,158.69.24.236,Hoverwatch
+ipv4,188.130.241.205,Hoverwatch
+ipv4,198.100.150.203,Hoverwatch

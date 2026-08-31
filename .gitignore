@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Generated at runtime (regeneratable via scripts/)
+results/
+data/cic_andmal2017/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Credentials (never commit)
+kaggle.json
+*.pem
+*.key
